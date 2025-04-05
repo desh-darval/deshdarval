@@ -5,7 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>विचार मंच | देश-दरवळ</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Baloo 2', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfb;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe6cc;
+    }
+    .logo {
+      height: 80px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #ffcc99;
+      padding: 0.75rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero-banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    main {
+      padding: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .card {
+      background-color: #fff8f0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe6cc;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -27,7 +90,7 @@
     <a href="contact.html">संपर्क / Submit</a>
   </nav>
 
-  <section>
+  <main>
     <h2>नवीन विचार</h2>
     <div class="grid">
       <div class="card">
@@ -43,7 +106,7 @@
         <p>परिवर्तनाची सुरुवात स्वतःपासून केली, तर समाजात बदल घडेल.</p>
       </div>
     </div>
-  </section>
+  </main>
 
   <footer>
     &copy; 2025 देश-दरवळ | सर्व हक्क राखीव
